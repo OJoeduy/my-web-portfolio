@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanawat Sawangsree | Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .fade-in {
+      animation: fadeInUp 0.8s ease-out;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body x-data x-init="$el.classList.add('opacity-0'); setTimeout(() => $el.classList.remove('opacity-0'), 50)" class="transition-opacity duration-500 ease-in-out opacity-100 bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 text-gray-800">
+  <header class="bg-white/80 backdrop-blur shadow-lg sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between">
+      <h1 class="text-2xl sm:text-3xl font-bold text-purple-800 drop-shadow tracking-wide">PortFolio Tanawat</h1>
+      <nav class="mt-4 md:mt-0">
+        <div class="flex flex-wrap justify-center gap-4 text-sm font-semibold text-purple-700">
+          <a href="index.html" class="hover:text-black">ABOUT ME</a>
+          <a href="profile.html" class="text-black border-b-2 border-purple-600">PROFILE</a>
+          <a href="experience.html" class="hover:text-black">EXPERIENCE</a>
+          <a href="contact.html" class="hover:text-black">CONTACT</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 fade-in">
+    <div class="bg-white p-6 md:p-10 rounded-2xl shadow-lg flex flex-col md:flex-row items-center gap-8 md:gap-10">
+      <img src="profile.jpg" alt="Profile Picture" class="w-full md:w-1/2 rounded-xl object-cover hover:scale-105 transition-transform duration-500">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-3xl sm:text-4xl font-bold text-purple-800 mb-4">Tanawat Sawangsree</h2>
+        <p class="text-gray-700"><strong>Birthday:</strong><br> April 6, 2004</p>
+        <p class="mt-2 text-gray-700"><strong>Age:</strong><br> 21 years</p>
+        <p class="mt-2 text-gray-700"><strong>Nickname:</strong><br> JO</p>
+        <p class="mt-2 text-gray-700"><strong>Interested occupation:</strong><br> Frontend Developer</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 fade-in">
+    <div>
+      <h2 class="text-xl font-semibold mb-4 text-purple-800">Education</h2>
+      <ul class="text-gray-700 space-y-4">
+        <li class="bg-white rounded-xl shadow p-4">
+          <strong>2022 - Present</strong><br />Bangkok University<br /><em>Information Technology and Innovation</em><br />GPA: 3.51
+        </li>
+        <li class="bg-white rounded-xl shadow p-4">
+          <strong>2019 - 2022</strong><br />Benchamaracharungsarit 2 School<br />English-Mathematics<br />GPA: 2.98
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="text-xl font-semibold mb-4 text-purple-800">Technical Skills</h2>
+      <ul class="text-gray-700 grid grid-cols-2 sm:grid-cols-2 gap-y-2 bg-white rounded-xl p-4 shadow">
+        <li><strong>HTML:</strong> Intermediate</li>
+        <li><strong>CSS:</strong> Intermediate</li>
+        <li><strong>JavaScript:</strong> Basic</li>
+        <li><strong>TypeScript:</strong> Basic</li>
+        <li><strong>Angular:</strong> Basic</li>
+        <li><strong>React:</strong> Beginner</li>
+        <li><strong>Node.js:</strong> Basic</li>
+        <li><strong>MySQL:</strong> Basic</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="bg-white/70 shadow-inner mt-12 py-6 text-center text-sm text-gray-500">
+    © 2025 Tanawat Sawangsree. All rights reserved.
+  </footer>
+</body>
+</html>
